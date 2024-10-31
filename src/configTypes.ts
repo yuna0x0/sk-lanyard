@@ -3,6 +3,8 @@ export interface LanyardConfigRest {
 	method: 'rest';
 	id: string;
 	pollInterval?: number;
+	maxConcurrentFetches?: number;
+	disablePolling?: boolean;
 }
 
 export interface LanyardConfigOne {

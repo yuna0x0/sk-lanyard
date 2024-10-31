@@ -1,14 +1,17 @@
 {
 	"name": "sk-lanyard",
-	"version": "0.2.7",
+	"version": "0.3.0",
 	"description": "SvelteKit integration with Lanyard, an API to fetch your Discord presence",
 	"main": "dist/index.cjs",
 	"module": "dist/index.js",
 	"types": "dist/index.d.ts",
-	"repository": "https://github.com/nebulatgs/sk-lanyard",
-	"author": "Nebula <infinitewormhole@gmail.com>",
+	"repository": "https://github.com/yuna0x0/sk-lanyard",
+	"contributors": [
+		"Nebula <infinitewormhole@gmail.com>",
+		"yuna0x0 <yuna@yuna0x0.com>"
+	],
 	"bugs": {
-		"url": "https://github.com/nebulatgs/sk-lanyard/issues"
+		"url": "https://github.com/yuna0x0/sk-lanyard/issues"
 	},
 	"files": [
 		"dist",
@@ -29,28 +32,29 @@
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"up": "tsup src/index.ts --dts --format esm,cjs --external svelte/store",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
-		"format": "prettier --write --plugin-search-dir=. ."
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^6.6.0",
-		"@typescript-eslint/parser": "^6.6.0",
-		"@vercel/ncc": "^0.38.0",
-		"eslint": "^8.49.0",
-		"eslint-config-prettier": "^9.0.0",
-		"eslint-plugin-svelte3": "^4.0.0",
-		"prettier": "^3.0.3",
-		"prettier-plugin-svelte": "^3.0.3",
-		"svelte": "^4.2.0",
-		"svelte-check": "^3.5.1",
-		"tsup": "^7.2.0",
-		"typescript": "^5.2.2"
+		"@typescript-eslint/eslint-plugin": "^8.12.2",
+		"@typescript-eslint/parser": "^8.12.2",
+		"@vercel/ncc": "^0.38.2",
+		"eslint": "^9.13.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-prettier": "^5.2.1",
+		"eslint-plugin-svelte": "^2.46.0",
+		"prettier": "^3.3.3",
+		"prettier-plugin-svelte": "^3.2.7",
+		"svelte": "^4.2.19",
+		"svelte-check": "^4.0.5",
+		"tsup": "^8.3.5",
+		"typescript": "^5.6.3"
 	},
 	"peerDependencies": {
-		"svelte": "^4.2.0",
-		"vite": "^4.4.9"
+		"svelte": "^4.2.19",
+		"vite": "^5.4.10"
 	},
 	"dependencies": {
-		"vite": "^4.4.9"
+		"vite": "^5.4.10"
 	}
 }
