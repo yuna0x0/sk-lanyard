@@ -1,5 +1,5 @@
 {
-	"name": "sk-lanyard",
+	"name": "@yuna0x0/sk-lanyard",
 	"version": "0.3.0",
 	"description": "SvelteKit integration with Lanyard, an API to fetch your Discord presence",
 	"main": "dist/index.cjs",
