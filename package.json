@@ -1,6 +1,6 @@
 {
 	"name": "@yuna0x0/sk-lanyard",
-	"version": "0.4.0",
+	"version": "0.4.1",
 	"description": "SvelteKit integration with Lanyard, an API to fetch your Discord presence",
 	"main": "dist/index.cjs",
 	"module": "dist/index.js",
@@ -29,6 +29,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "ncc build src/index.ts -m -e svelte/store",
+		"prepare": "pnpm run build",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"up": "tsup src/index.ts --dts --format esm,cjs --external svelte/store",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
