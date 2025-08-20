@@ -1,6 +1,6 @@
 {
 	"name": "@yuna0x0/sk-lanyard",
-	"version": "0.4.1",
+	"version": "0.4.2",
 	"description": "SvelteKit integration with Lanyard, an API to fetch your Discord presence",
 	"main": "dist/index.cjs",
 	"module": "dist/index.js",
@@ -28,7 +28,8 @@
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
-		"build": "ncc build src/index.ts -m -e svelte/store",
+		"clean": "rimraf dist",
+		"build": "pnpm run clean && ncc build src/index.ts -m -e svelte/store",
 		"prepare": "pnpm run build",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"up": "tsup src/index.ts --dts --format esm,cjs --external svelte/store",
@@ -46,6 +47,7 @@
 		"eslint-plugin-svelte": "^3.11.0",
 		"prettier": "^3.6.2",
 		"prettier-plugin-svelte": "^3.4.0",
+		"rimraf": "^6.0.1",
 		"svelte": "^5.38.2",
 		"svelte-check": "^4.3.1",
 		"tsup": "^8.5.0",

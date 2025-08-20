@@ -1,8 +1,8 @@
-# `sk-lanyard` (SvelteKit + Lanyard)
+# `@yuna0x0/sk-lanyard` (SvelteKit + Lanyard)
 
 SvelteKit integration with [Lanyard](https://github.com/Phineas/lanyard), an API to fetch your Discord presence.
 
-`sk-lanyard` is fully typed and supports the entire Lanyard API, using both REST and WebSockets.
+`@yuna0x0/sk-lanyard` is fully typed and supports the entire Lanyard API, using both REST and WebSockets.
 
 The `useLanyard` function returns a reactive store containing presence data.
 
@@ -10,7 +10,7 @@ The `useLanyard` function returns a reactive store containing presence data.
 
 ```html
 <script>
-	import { useLanyard } from 'sk-lanyard';
+	import { useLanyard } from '@yuna0x0/sk-lanyard';
 	const presence = useLanyard({ method: 'rest', id: '524722785302609941' });
 </script>
 
@@ -23,10 +23,10 @@ The `useLanyard` function returns a reactive store containing presence data.
 ## Usage
 
 ```ts
-import { useLanyard } from 'sk-lanyard';
+import { useLanyard } from '@yuna0x0/sk-lanyard';
 
 // Optionally import Lanyard types
-import type { LanyardData, LanyardHello } from 'sk-lanyard';
+import type { LanyardData, LanyardHello } from '@yuna0x0/sk-lanyard';
 ```
 
 ### REST
