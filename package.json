@@ -1,6 +1,6 @@
 {
 	"name": "@yuna0x0/sk-lanyard",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"description": "SvelteKit integration with Lanyard, an API to fetch your Discord presence",
 	"main": "dist/index.cjs",
 	"module": "dist/index.js",
@@ -36,25 +36,22 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^8.12.2",
-		"@typescript-eslint/parser": "^8.12.2",
-		"@vercel/ncc": "^0.38.2",
-		"eslint": "^9.13.0",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-prettier": "^5.2.1",
-		"eslint-plugin-svelte": "^2.46.0",
-		"prettier": "^3.3.3",
-		"prettier-plugin-svelte": "^3.2.7",
-		"svelte": "^4.2.19",
-		"svelte-check": "^4.0.5",
-		"tsup": "^8.3.5",
-		"typescript": "^5.6.3"
+		"@typescript-eslint/eslint-plugin": "^8.40.0",
+		"@typescript-eslint/parser": "^8.40.0",
+		"@vercel/ncc": "^0.38.3",
+		"eslint": "^9.33.0",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-prettier": "^5.5.4",
+		"eslint-plugin-svelte": "^3.11.0",
+		"prettier": "^3.6.2",
+		"prettier-plugin-svelte": "^3.4.0",
+		"svelte": "^5.38.2",
+		"svelte-check": "^4.3.1",
+		"tsup": "^8.5.0",
+		"typescript": "^5.9.2"
 	},
 	"peerDependencies": {
-		"svelte": "^4.2.19",
-		"vite": "^5.4.10"
+		"svelte": "^5.38.2"
 	},
-	"dependencies": {
-		"vite": "^5.4.10"
-	}
+	"packageManager": "pnpm@10.15.0+sha512.486ebc259d3e999a4e8691ce03b5cac4a71cbeca39372a9b762cb500cfdf0873e2cb16abe3d951b1ee2cf012503f027b98b6584e4df22524e0c7450d9ec7aa7b"
 }
